@@ -16,7 +16,7 @@ import { ff10 } from './modules/ff10'
 import { ff12 } from './modules/ff12'
 import { ff13 } from './modules/ff13'
 import { ff15 } from './modules/ff15'
-import { userModule } from './modules/user'
+import { userAdmin } from './modules/user'
 
 
 export default new Vuex.Store({
@@ -60,6 +60,6 @@ export default new Vuex.Store({
     ff12,
     ff13,
     ff15,
-    userModule
+    userAdmin
   }
 })

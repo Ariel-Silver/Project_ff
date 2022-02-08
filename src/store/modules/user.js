@@ -1,6 +1,6 @@
 import Firebase from 'firebase'
 
-export const userModule = {
+export const userAdmin = {
   namespaced: true,
   state: {
     user: null
@@ -29,14 +29,7 @@ export const userModule = {
       await Firebase.auth()
         .signInWithEmailAndPassword(credentials.email, credentials.password)
         .then(() => {
-          console.log('inicio exitoso')
-        })
-    },
-    async signUp(_context, credentials) {
-      await Firebase.auth()
-        .createUserWithEmailAndPassword(credentials.email, credentials.password)
-        .then(() => {
-          console.log('creación exitoso')
+          console.log('login succeful')
         })
     },
     async signOut() {
