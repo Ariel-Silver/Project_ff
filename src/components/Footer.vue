@@ -1,10 +1,12 @@
 <template>
-  <v-container>
-    <v-footer dark padless>
+  
+    <v-footer 
+    dark >
+    <v-container>
       <v-card class="flex" flat tile>
-        <v-card-title class="teal">
+        <v-card-title>
           <strong class="subheading"
-            >Connected with us on social networks!</strong
+            >Project Final Fantasy community</strong
           >
 
           <v-spacer></v-spacer>
@@ -22,8 +24,9 @@
           {{ new Date().getFullYear() }} — <strong>Ariel Abarca P.</strong>
         </v-card-text>
       </v-card>
+      </v-container>
     </v-footer>
-  </v-container>
+  
 </template>
 
 <script>
@@ -56,7 +59,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 a {
   text-decoration: none;
   color: white;
