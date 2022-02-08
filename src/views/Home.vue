@@ -10,13 +10,7 @@
               :key="i"
               :src="item.src"
               :href="item.link"
-            >
-              <v-row
-                class="title fill-height hidden-xs-only"
-                align="center"
-                justify="center"
-                >{{ item.title }}</v-row
-              >
+            >  
             </v-carousel-item>
           </v-carousel>
         </div>
@@ -89,7 +83,7 @@
               </v-card-actions>
             </v-card>
 
-            <v-card outlined class="mx-auto mt-10 hover" max-width="344">
+            <v-card name="news" outlined class="mx-auto mt-10 hover" max-width="344">
               <v-img
                 src="https://thesupertimes.com/wp-content/uploads/2022/01/Tifa-Lockhart-Has-Become-A-Wholesome-Italian-Icon-900x400.jpg"
                 height="200px"
@@ -201,8 +195,6 @@ export default {
         },
         {
           src: require("@/assets/16.jpg"),
-          title:
-            "The legacy of the crystals has shaped our history for long enough.",
           link: "https://na.finalfantasyxvi.com/",
         },
         {
